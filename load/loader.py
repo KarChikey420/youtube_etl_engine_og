@@ -57,7 +57,7 @@ def insert_video_stats(stats, db_config=DB_CONFIG):
         conn.commit()
         cursor.close()
         conn.close()
-        print("✅ Video data inserted/updated successfully.")
+        print("Video data inserted/updated successfully.")
 
     except Exception as e:
-        print(f"❌ Error inserting video stats: {e}")
+        print(f"Error inserting video stats: {e}")
